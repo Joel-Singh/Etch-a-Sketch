@@ -1,3 +1,4 @@
+const sketchPad = document.querySelector("#sketch-pad");
 function getRowArray() {
   return Array.from(document.querySelectorAll(".row"));
 }
