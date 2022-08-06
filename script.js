@@ -14,6 +14,12 @@ function createRowsAndColumns(size) {
   });
 }
 
+function removeRowsAndColumns() {
+  getRowArray().forEach((e) => {
+    sketchPad.removeChild(e);
+  });
+}
+
 function getRowArray() {
   return Array.from(document.querySelectorAll(".row"));
 }
