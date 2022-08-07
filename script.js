@@ -1,6 +1,21 @@
 let root = document.querySelector(":root");
 let style = getComputedStyle(document.body);
 const sketchPad = document.querySelector("#sketch-pad");
+
+function initializeSketchpad(size) {
+  removeRowsAndColumns();
+  createRowsAndColumns(size);
+  root.style.setProperty(
+    "--column-width",
+    style.getPropertyValue("--sketch-pad-width").replace("px", "") / size + "px"
+  );
+  root.style.setProperty(
+    "--column-height",
+    style.getPropertyValue("--sketch-pad-height").replace("px", "") / size +
+      "px"
+  );
+}
+
 function createRowsAndColumns(size) {
   for (let i = 0; i < size; i++) {
     const newRow = document.createElement("div");
