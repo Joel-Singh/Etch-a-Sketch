@@ -1,3 +1,4 @@
+let root = document.querySelector(":root");
 const sketchPad = document.querySelector("#sketch-pad");
 function createRowsAndColumns(size) {
   for (let i = 0; i < size; i++) {
