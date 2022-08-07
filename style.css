@@ -10,3 +10,7 @@
 .row {
   display: flex;
 }
+#sketch-pad {
+  width: var(--sketch-pad-width);
+  height: var(--sketch-pad-height);
+}
