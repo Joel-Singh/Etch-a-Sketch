@@ -1,16 +1,14 @@
 :root {
   --column-size: 0px;
-  --sketch-pad-size: 960px;
-}
-* {
-  box-sizing: border-box;
   --sketch-pad-size: 500px;
+  --margin-size: 1px;
 }
 .column {
-  width: var(--column-size);
-  height: var(--column-size);
+  /* border-box not used because it wasn't working  */
+  width: calc(var(--column-size) - var(--margin-size) * 2);
+  height: calc(var(--column-size) - var(--margin-size) * 2);
   background-color: black;
-  margin: 1px;
+  margin: var(--margin-size);
 }
 .row {
   display: flex;
