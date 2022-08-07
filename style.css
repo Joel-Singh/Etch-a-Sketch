@@ -7,7 +7,6 @@
   /* border-box not used because it wasn't working  */
   width: calc(var(--column-size) - var(--margin-size) * 2);
   height: calc(var(--column-size) - var(--margin-size) * 2);
-  background-color: black;
   margin: var(--margin-size);
 }
 .row {
