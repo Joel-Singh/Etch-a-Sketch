@@ -4,6 +4,7 @@
 }
 * {
   box-sizing: border-box;
+  --sketch-pad-size: 500px;
 }
 .column {
   width: var(--column-size);
