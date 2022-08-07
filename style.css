@@ -1,3 +1,9 @@
+:root {
+  --column-width: 0px;
+  --column-height: 0px;
+  --sketch-pad-height: 960px;
+  --sketch-pad-width: 960px;
+}
 * {
   box-sizing: border-box;
 }
