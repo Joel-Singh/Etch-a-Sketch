@@ -10,6 +10,7 @@
 .column {
   width: var(--column-width);
   height: var(--column-height);
+  background-color: black;
 }
 .row {
   display: flex;
