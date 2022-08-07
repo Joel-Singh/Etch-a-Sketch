@@ -6,13 +6,8 @@ function initializeSketchpad(size) {
   removeRowsAndColumns();
   createRowsAndColumns(size);
   root.style.setProperty(
-    "--column-width",
-    style.getPropertyValue("--sketch-pad-width").replace("px", "") / size + "px"
-  );
-  root.style.setProperty(
-    "--column-height",
-    style.getPropertyValue("--sketch-pad-height").replace("px", "") / size +
-      "px"
+    "--column-size",
+    style.getPropertyValue("--sketch-pad-size").replace("px", "") / size + "px"
   );
 }
 

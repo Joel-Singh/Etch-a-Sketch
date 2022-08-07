@@ -1,15 +1,13 @@
 :root {
-  --column-width: 0px;
-  --column-height: 0px;
-  --sketch-pad-height: 960px;
-  --sketch-pad-width: 960px;
+  --column-size: 0px;
+  --sketch-pad-size: 960px;
 }
 * {
   box-sizing: border-box;
 }
 .column {
-  width: var(--column-width);
-  height: var(--column-height);
+  width: var(--column-size);
+  height: var(--column-size);
   background-color: black;
   margin: 1px;
 }
@@ -17,6 +15,6 @@
   display: flex;
 }
 #sketch-pad {
-  width: var(--sketch-pad-width);
-  height: var(--sketch-pad-height);
+  width: var(--sketch-pad-size);
+  height: var(--sketch-pad-size);
 }
