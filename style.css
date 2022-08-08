@@ -3,6 +3,13 @@
   --sketch-pad-size: 500px;
   --margin-size: 1px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 .column {
   /* border-box not used because it wasn't working  */
   width: calc(var(--column-size) - var(--margin-size) * 2);
