@@ -1,6 +1,12 @@
 const root = document.querySelector(":root");
 const style = getComputedStyle(document.body);
 const sketchPad = document.querySelector("#sketch-pad");
+const btn = document.querySelector("#regenerate-sketchpad");
+const input = document.querySelector("#sketchpad-resolution");
+
+btn.addEventListener("click", (e) =>
+  initializeSketchpad(Math.min(100, input.value))
+);
 
 function initializeSketchpad(size) {
   removeRowsAndColumns();
