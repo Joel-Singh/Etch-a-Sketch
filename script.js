@@ -6,6 +6,7 @@ function initializeSketchpad(size) {
   removeRowsAndColumns();
   createRowsAndColumns(size);
   setColumnsWidthAndHeight(size);
+  addHoverEffectToColumns();
 }
 
 function createRowsAndColumns(size) {
@@ -35,6 +36,15 @@ function setColumnsWidthAndHeight(size) {
     style.getPropertyValue("--sketch-pad-size").replace("px", "") / size + "px"
   );
 }
+
+function addHoverEffectToColumns() {
+  getColumnArray().forEach((element) => {
+    element.addEventListener("mouseover", (event) => {
+      element.classList.add("black-background");
+    });
+  });
+}
+
 function getRowArray() {
   return Array.from(document.querySelectorAll(".row"));
 }
