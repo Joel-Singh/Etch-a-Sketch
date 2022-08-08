@@ -1,5 +1,5 @@
-let root = document.querySelector(":root");
-let style = getComputedStyle(document.body);
+const root = document.querySelector(":root");
+const style = getComputedStyle(document.body);
 const sketchPad = document.querySelector("#sketch-pad");
 
 function initializeSketchpad(size) {
