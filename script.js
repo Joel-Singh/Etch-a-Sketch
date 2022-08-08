@@ -5,10 +5,7 @@ const sketchPad = document.querySelector("#sketch-pad");
 function initializeSketchpad(size) {
   removeRowsAndColumns();
   createRowsAndColumns(size);
-  root.style.setProperty(
-    "--column-size",
-    style.getPropertyValue("--sketch-pad-size").replace("px", "") / size + "px"
-  );
+  setColumnsWidthAndHeight(size);
 }
 
 function createRowsAndColumns(size) {
@@ -32,6 +29,12 @@ function removeRowsAndColumns() {
   });
 }
 
+function setColumnsWidthAndHeight(size) {
+  root.style.setProperty(
+    "--column-size",
+    style.getPropertyValue("--sketch-pad-size").replace("px", "") / size + "px"
+  );
+}
 function getRowArray() {
   return Array.from(document.querySelectorAll(".row"));
 }
