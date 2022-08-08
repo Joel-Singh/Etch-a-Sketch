@@ -9,6 +9,9 @@
   height: calc(var(--column-size) - var(--margin-size) * 2);
   margin: var(--margin-size);
 }
+.black-background {
+  background-color: black;
+}
 .row {
   display: flex;
 }
