@@ -18,4 +18,5 @@
 #sketch-pad {
   width: var(--sketch-pad-size);
   height: var(--sketch-pad-size);
+  border: ridge black;
 }
